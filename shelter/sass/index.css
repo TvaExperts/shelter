@@ -1,0 +1,81 @@
+body {
+  font-family: "Georgia", Verdana, sans-serif;
+}
+
+.logo-subtitle {
+  font-family: "Arial", Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4.4rem;
+  line-height: 5.7rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #545454;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 200px;
+  background-color: beige;
+}
+
+.header-wrapper {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-title {
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #F1CDB3;
+}
+
+.logo-subtitle {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+}
+
+.start {
+  height: 1000px;
+  margin-top: -200px;
+  background-color: aqua;
+}/*# sourceMappingURL=index.css.map */

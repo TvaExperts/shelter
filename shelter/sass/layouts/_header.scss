@@ -1,0 +1,35 @@
+.header {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-title {
+    @include font(3.2rem, 3.5rem);
+    color: $color-primary;
+}
+
+.logo-subtitle {
+    @include font(1.3rem, 1.5rem);
+    @extend %font-additional;
+    color: $color-light-xl;
+    letter-spacing: 0.1em;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+

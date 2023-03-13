@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    @include font(1.5rem, 2.4rem);
+    @extend  %font-primary;
+}
+
+h1 {
+    @include font(4.4rem, 5.7rem);
+    color: $color-light-xl;
+}
+
+h2 {
+    @include font(3.5rem, 4.5rem);
+    color: $color-dark-l;
+   
+}
+
