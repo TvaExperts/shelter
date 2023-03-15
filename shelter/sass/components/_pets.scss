@@ -1,0 +1,31 @@
+.pets {
+    background: $color-light-l;
+}
+
+.pets-wrapper {
+    text-align: center;
+}
+
+.pets-title {
+    max-width: 400px;
+    margin: 0 auto;
+    color: $color-dark-l;
+
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    max-width: 270px;
+    border-radius: 9px;
+    background: $color-light-s;
+    text-align: center;
+}
+
+
+
+
