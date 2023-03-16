@@ -10,7 +10,7 @@
 }
 
 .footer-contacts {
-    padding: 56px 0;
+    padding: 56px 0 52px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -22,19 +22,27 @@
 }
 
 .contacts-title {
-    max-width: 270px;
+    max-width: 280px;
     @include  font(3.5rem, 4.5rem);
     color: $color-light-xl;
+    letter-spacing: 0.06em;
 }
 
-
+.contacts-list {
+    padding-top: 35px;
+    list-style-type: none;
+}
 
 .contact-item {
     height: 46px;
-    margin-top: 42px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-item:last-child {
+    margin: 0;
 }
 
 .contacts-link {

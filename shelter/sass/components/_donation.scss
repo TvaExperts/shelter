@@ -3,9 +3,11 @@
 }
 
 .donation-container {
+    padding: 80px 140px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .donation-img {
@@ -18,25 +20,37 @@
 
 .donation-title {
     max-width: 300px;
+    padding-bottom: 20px;
 }
+
+.donation-text {
+    @include  font(1.5rem, 1.7rem);
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    padding-bottom: 20px;
+}
+
 
 .creditcard-content {
     padding: 10px 15px;
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     background: $color_primary;
     border-radius: 9px;
+    margin-bottom: 20px;
 }
 
 .creditcard-nomber {
     @include  font(2rem, 2.3rem);
     color: $color-dark-l;
+    letter-spacing: 0.06em;
 }
 
 .donation-disclaimer {
     @extend  %font-additional;
     @include  font(1.2rem, 1.8rem);
     color: $color-dark-m;
+    font-style: italic;
 }
