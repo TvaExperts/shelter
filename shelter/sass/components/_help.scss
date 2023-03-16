@@ -4,6 +4,19 @@
 
 .help-title {
     margin: 0 auto;
-    max-width: 308px;
+    padding-top: 80px;
+    max-width: 310px;
 }
 
+.help-cards {
+    padding: 0 87px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 120px;
+    justify-content: center;
+}
+
+.card-caption {
+    color: $color_dark-l;
+    @include  font(2rem, 2.3rem);
+}

@@ -27,9 +27,14 @@ module.exports = (env, options) => {
     plugins: [
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin(),
-       new HtmlWebpackPlugin( {
-         template: './index.html'
-       }),
+      new HtmlWebpackPlugin( {
+        filename: 'index.html',
+        template: './index.html'
+      }),
+      new HtmlWebpackPlugin( {
+        filename: 'our-pets.html',
+        template: './our-pets.html'
+      }),
     ],
     module: {
       rules: [

@@ -1,0 +1,47 @@
+.footer {
+    background: url(../assets/img/footer/gradient.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer-wrapper {
+    background-image: url(../assets/img/footer/footer-puppy.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
+}
+
+.footer-contacts {
+    padding: 56px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 160px;
+}
+
+.contacts-column {
+    max-width: 300px;
+}
+
+.contacts-title {
+    max-width: 270px;
+    @include  font(3.5rem, 4.5rem);
+    color: $color-light-xl;
+}
+
+
+
+.contact-item {
+    height: 46px;
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contacts-link {
+    margin-left: 20px;
+    text-decoration: none;
+    @include  font(2rem, 2.3rem);
+    @extend  %font-primary;
+    color: $color_primary;
+    letter-spacing: 0.06em;
+}

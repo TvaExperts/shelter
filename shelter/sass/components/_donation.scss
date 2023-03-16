@@ -1,0 +1,42 @@
+.donation {
+    background: $color-light-l;
+}
+
+.donation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donation-img {
+    display: block;
+}
+
+.donation-content {
+    max-width: 380px;
+}
+
+.donation-title {
+    max-width: 300px;
+}
+
+.creditcard-content {
+    padding: 10px 15px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background: $color_primary;
+    border-radius: 9px;
+}
+
+.creditcard-nomber {
+    @include  font(2rem, 2.3rem);
+    color: $color-dark-l;
+}
+
+.donation-disclaimer {
+    @extend  %font-additional;
+    @include  font(1.2rem, 1.8rem);
+    color: $color-dark-m;
+}
