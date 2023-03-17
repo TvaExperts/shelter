@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -20,20 +21,27 @@ module.exports = (env, options) => {
 
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'main.js',
-      assetModuleFilename: 'assets/[name]-[hash][ext]'
+      filename: 'script.js',
+      assetModuleFilename: 'assets/[name][ext]'
     },
 
     plugins: [
       new CleanWebpackPlugin(),
-      new MiniCssExtractPlugin(),
+      new CopyPlugin({
+        patterns: [
+          { from: './src/assets/img/pets', to: "assets" },
+        ],
+      }),
+      new MiniCssExtractPlugin({
+        filename: "style.css",
+      }),
       new HtmlWebpackPlugin( {
         filename: 'index.html',
-        template: './index.html'
+        template: './src/pages/index.html'
       }),
       new HtmlWebpackPlugin( {
         filename: 'our-pets.html',
-        template: './our-pets.html'
+        template: './src/pages/our-pets.html'
       }),
     ],
     module: {
