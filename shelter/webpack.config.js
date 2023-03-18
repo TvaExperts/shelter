@@ -1,9 +1,7 @@
-const webpack = require('webpack');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
-
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env, options) => {
@@ -16,12 +14,14 @@ module.exports = (env, options) => {
 
     devtool: 'source-map',
 
-
-    entry: './src/index.js',
+    entry: {
+      main: './src/index.js',
+      pets: './src/pets.js'
+    },
 
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'script.js',
+      filename: 'js/[name].js',
       assetModuleFilename: 'assets/[name][ext]'
     },
 
@@ -33,15 +33,17 @@ module.exports = (env, options) => {
         ],
       }),
       new MiniCssExtractPlugin({
-        filename: "style.css",
+        filename: "style/[name].css",
       }),
       new HtmlWebpackPlugin( {
         filename: 'index.html',
-        template: './src/pages/index.html'
+        template: './src/index.html',
+        chunks: ['main'],
       }),
       new HtmlWebpackPlugin( {
         filename: 'our-pets.html',
-        template: './src/pages/our-pets.html'
+        template: './src/our-pets.html',
+        chunks: ['pets'],
       }),
     ],
     module: {

@@ -3,18 +3,19 @@
 }
 
 .donation-container {
-    padding: 80px 140px 100px;
+    padding: 80px 142px 99px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    align-items: flex-start;
 }
 
 .donation-img {
+    padding-top: 12px;
     display: block;
 }
 
 .donation-content {
+    padding-top: 3px;
     max-width: 380px;
 }
 
@@ -29,7 +30,6 @@
     color: $color-dark-l;
     padding-bottom: 20px;
 }
-
 
 .creditcard-content {
     padding: 10px 15px;

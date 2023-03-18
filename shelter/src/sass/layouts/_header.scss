@@ -31,13 +31,13 @@
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    gap: 35px;
+    gap: 36px;
 }
 
 .active-item {
     color: $color-light-s;
     @extend %font-additional;
-    border-bottom: 3px solid $color-primary;
+    border-bottom: 4px solid $color-primary;
 }
 
 
