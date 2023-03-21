@@ -1,0 +1,156 @@
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/our-pets.scss ***!
+  \*****************************************************************************************************************/
+body, .button, .contacts-link {
+  font-family: 'Georgia', Verdana, sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-style: normal; }
+
+h1 {
+  font-size: 4.4rem;
+  line-height: 5.7rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF; }
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #545454;
+  letter-spacing: 0.06em; }
+
+.button {
+  padding: 15px 45px;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  font-style: normal;
+  background: #F1CDB3;
+  color: #292929;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer; }
+  .button.button-light {
+    background: transparent;
+    padding: 13px 43px;
+    border: 2px solid #F1CDB3; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.footer {
+  background: url(../assets/gradient.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20; }
+
+.footer-wrapper {
+  background-image: url(../assets/footer-puppy.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%; }
+
+.footer-contacts {
+  padding: 56px 0 52px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 160px; }
+
+.contacts-column {
+  max-width: 300px; }
+
+.contacts-title {
+  max-width: 280px;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  letter-spacing: 0.06em; }
+
+.contacts-list {
+  padding-top: 35px;
+  list-style-type: none; }
+
+.contact-item {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 25px; }
+
+.contact-item:last-child {
+  margin: 0; }
+
+.contacts-link {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #F1CDB3;
+  letter-spacing: 0.06em; }
+
+.pets {
+  background: #F6F6F6; }
+
+.pets-wrapper {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 100px; }
+
+.pets-title {
+  max-width: 400px;
+  margin: 0 auto;
+  color: #545454; }
+
+.pets-slider {
+  padding: 60px 105px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.pets-paginator {
+  padding: 60px 105px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px; }
+
+.card {
+  max-width: 270px;
+  padding-bottom: 30px;
+  background: #FAFAFA;
+  text-align: center;
+  border-radius: 9px;
+  overflow: hidden; }
+
+.card-name {
+  padding-top: 24px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #545454;
+  letter-spacing: 0.06em; }
+
+
+/*# sourceMappingURL=pets.css.map*/
