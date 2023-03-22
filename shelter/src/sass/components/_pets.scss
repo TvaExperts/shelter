@@ -1,52 +1,25 @@
 .pets {
-    background: $color-light-l;
+   background: $color-light-l;
+
 }
 
-.pets-wrapper {
+.pets__container {
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 113px;
 }
 
-.pets-title {
-    max-width: 400px;
-    margin: 0 auto;
-    color: $color-dark-l;
-}
-
-.pets-slider {
-    padding: 60px 105px 60px;
+.pets__slider {
+    padding: 60px 105px 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.pets-paginator {
-    padding: 60px 105px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 30px;
-}
 
-.card {
-    max-width: 270px;
-    padding-bottom: 30px;
-    background: $color-light-s;
-    text-align: center;
-    border-radius: 9px;
-    overflow: hidden;
-}
 
-.card-name {
-    padding-top: 24px;
-    padding-bottom: 30px;
-    @include  font(2rem, 2.3rem);
-    color: $color-dark-l;
-    letter-spacing: 0.06em;
-}
+
 
 
 

@@ -2,19 +2,19 @@
     background: $color-light-l;
 }
 
-.donation-container {
-    padding: 80px 142px 99px;
+.donation__container {
+    padding: 78px 142px 99px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.donation-img {
-    padding-top: 12px;
+.donation__img {
+    padding-top: 13px;
     display: block;
 }
 
-.donation-content {
+.donation__content {
     padding-top: 3px;
     max-width: 380px;
 }
@@ -24,14 +24,15 @@
     padding-bottom: 20px;
 }
 
-.donation-text {
+.donation__text {
     @include  font(1.5rem, 1.7rem);
     letter-spacing: 0.06em;
     color: $color-dark-l;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.creditcard-content {
+.donation__creditcard {
     padding: 10px 15px;
     display: inline-flex;
     justify-content: flex-start;
@@ -40,15 +41,16 @@
     background: $color_primary;
     border-radius: 9px;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
-.creditcard-nomber {
+.donation__card-number {
     @include  font(2rem, 2.3rem);
     color: $color-dark-l;
     letter-spacing: 0.06em;
 }
 
-.donation-disclaimer {
+.donation__disclaimer {
     @extend  %font-additional;
     @include  font(1.2rem, 1.8rem);
     color: $color-dark-m;

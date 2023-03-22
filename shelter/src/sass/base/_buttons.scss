@@ -1,18 +1,34 @@
 .button {
-    padding: 15px 45px;
+    padding: 17px 45px;
     @include font(1.7rem, 2.2rem);
     @extend %font-primary;
     background: $color-primary;
     color: $color-dark-3xl;
     letter-spacing: 0.06em;
-    border: none;
     border-radius: 100px;
     cursor: pointer;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
 
-    &.button-light {
-        background: transparent;
-        padding: 13px 43px;
-        border: 2px solid  $color-primary;
+    &:hover {
+        background: $color-primary-light;
+    }
+
+}
+
+.button_light {
+    background: transparent;
+    padding: 14px 43px;
+    border: 2px solid  $color-primary;
+
+    &:hover {
+        background: $color-primary-light;
+        border-color: $color-primary-light;
     }
 }
 
+.pet-card:hover .button_light {
+    background: $color-primary-light;
+    border-color: $color-primary-light;
+
+}

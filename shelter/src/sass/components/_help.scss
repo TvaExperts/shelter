@@ -2,21 +2,19 @@
     text-align: center;
 }
 
-.help-title {
-    margin: 0 auto;
+.help__container {
     padding-top: 80px;
-    max-width: 310px;
 }
 
-.help-cards {
-    padding: 60px 70px 98px;
+.help__cards {
+    padding: 60px 70px 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 55px 120px;
     justify-content: center;
 }
 
-.help-card {
+.help__card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,13 +23,13 @@
     height: 113px;
 }
 
-.card-image {
+.help__card-img {
     height: 60px;
     display: flex;
     align-items: center;
 }
 
-.card-caption {
+.help__card-caption {
     color: $color_dark-l;
     @include  font(2rem, 2.3rem);
     letter-spacing: 0.06em;

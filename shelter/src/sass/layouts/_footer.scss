@@ -2,38 +2,38 @@
     background: url(../assets/img/footer/gradient.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
-.footer-wrapper {
+.footer__container {
     background-image: url(../assets/img/footer/footer-puppy.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
 
 }
 
-.footer-contacts {
-    padding: 56px 0 52px;
+.footer__content {
+    padding: 56px 0 53px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 160px;
+    gap: 159px;
 }
 
-.contacts-column {
+.footer__column {
     max-width: 300px;
 }
 
-.contacts-title {
+.footer__title {
     max-width: 280px;
     @include  font(3.5rem, 4.5rem);
     color: $color-light-xl;
     letter-spacing: 0.06em;
 }
 
-.contacts-list {
-    padding-top: 35px;
+.footer__list {
+    padding-top: 34px;
     list-style-type: none;
 }
 
-.contact-item {
+.footer__contact-item {
     height: 46px;
     display: flex;
     align-items: center;
@@ -41,11 +41,11 @@
     margin-bottom: 25px;
 }
 
-.contact-item:last-child {
+.footer__contact-item:last-child {
     margin: 0;
 }
 
-.contacts-link {
+.footer__link {
     margin-left: 20px;
     text-decoration: none;
     @include  font(2rem, 2.3rem);

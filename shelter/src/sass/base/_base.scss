@@ -14,15 +14,9 @@ body {
     @extend  %font-primary;
 }
 
-h1 {
-    @include font(4.4rem, 5.7rem);
-    color: $color-light-xl;
-}
-
 h2 {
     @include font(3.5rem, 4.5rem);
     color: $color-dark-l;
     letter-spacing: 0.06em;
-
 }
 

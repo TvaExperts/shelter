@@ -1,24 +1,20 @@
-.about-container {
+.about__container {
     padding: 80px 175px 100px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.about-pets {
+.about__img {
     display: block;
 }
 
-.about-content {
+.about__content {
     padding-top: 15px;
     max-width: 430px;
 }
 
-.about-title {
-    max-width: 370px;
-}
-
-.about-text {
+.about__text {
     @extend  %font-additional;
     padding-top: 25px;
 }

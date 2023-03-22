@@ -35,15 +35,15 @@ class PetCard {
     generatePetCard() {
         let template = '';
         let petCard = document.createElement('petCard');
-        petCard.className = 'card';
+        petCard.className = 'pet-card';
         petCard.setAttribute('data-id', this.id);
 
         this.urlToImage &&
-        (template += `<img class="card-img" src=${this.urlToImage} alt=${this.name}>`)
+        (template += `<img class="pet-card__img" src=${this.urlToImage} alt=${this.name}>`)
 
         if (this.name) {
-            template += `<p class="card-name">${this.name}</p>`;
-            template += `<button class="button button-light">Learn more</button>`;
+            template += `<p class="pet-card__name">${this.name}</p>`;
+            template += `<a class="button button_light" href="https://ya.ru" target="_blank">Learn more</a>`;
         }
         petCard.innerHTML = template;
         return petCard;

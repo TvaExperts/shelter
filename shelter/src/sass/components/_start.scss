@@ -4,30 +4,30 @@
     background: url(../assets/img/start/gradient.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
 }
 
-.start-wrapper {
+.start__container {
     background-image: url(../assets/img/start/start-screen-puppy.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
 }
 
-.start-content {
+.start__content {
     max-width: 460px;
     padding-top: 193px;
-    padding-bottom: 243px;
+    padding-bottom: 256px;
 }
 
-.start-title{
-    max-width: 310px;
-    margin-bottom: 42px;
+.start__title {
+    max-width: 320px;
+    @include font(4.4rem, 5.7rem);
+    color: $color-light-xl;
+    letter-spacing: 0;
 }
 
-.start-text {
-    margin-bottom: 42px;
+.start__text {
+    padding-top: 43px;
+    padding-bottom: 56px;
     @include  font(1.5rem, 2.4rem);
     @extend  %font-additional;
     color: $color-dark-s;
 }
 
-.link-button {
-    text-decoration: none;
-}
