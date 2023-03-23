@@ -6,14 +6,11 @@
     background-image: url(../assets/img/footer/footer-puppy.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
-
 }
 
 .footer__content {
     padding: 56px 0 53px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 159px;
 }
 
@@ -35,10 +32,10 @@
 
 .footer__contact-item {
     height: 46px;
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 25px;
 }
 
 .footer__contact-item:last-child {

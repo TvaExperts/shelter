@@ -1,3 +1,8 @@
+.welcome-wrapper {
+    padding-top: 30px;
+    background: url(../assets/img/start/gradient.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+}
+
 .wrapper {
     max-width: $content-width;
     margin: 0 auto;

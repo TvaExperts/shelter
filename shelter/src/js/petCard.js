@@ -17,7 +17,7 @@ export class PetCard {
 
         if (this.name) {
             template += `<p class="pet-card__name">${this.name}</p>`;
-            template += `<a class="button button_light" href="https://ya.ru" target="_blank">Learn more</a>`;
+            template += `<span class="button button_light">Learn more</span>`;
         }
         petCard.innerHTML = template;
         return petCard;

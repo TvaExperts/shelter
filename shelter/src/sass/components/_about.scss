@@ -10,11 +10,11 @@
 }
 
 .about__content {
-    padding-top: 15px;
     max-width: 430px;
+    padding-top: 15px;
 }
 
 .about__text {
-    @extend  %font-additional;
     padding-top: 25px;
+    @extend  %font-additional;
 }

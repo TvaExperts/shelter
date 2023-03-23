@@ -9,13 +9,8 @@ window.onload = function () {
 
 }
 
-
-
-
-
-
 const getPetsPaginator = () => {
-    const paginator = document.querySelector('.pets-paginator');
+    const paginator = document.querySelector('.all-pets__cards');
     paginator.innerHTML = '';
     return paginator;
 }

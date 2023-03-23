@@ -15,12 +15,11 @@
 }
 
 .help__card {
+    height: 113px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    align-content: center;
-    height: 113px;
 }
 
 .help__card-img {

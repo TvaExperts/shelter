@@ -8,67 +8,76 @@
     <link rel="icon" type="image/x-icon" href="./assets/svg/favicon.svg">
 </head>
 <body>
-    <header class="header-our">
+    <header class="header">
         <div class="wrapper">
-            <div class="logo">
-                <div class="logo-title our">Cozy House</div>
-                <div class="logo-subtitle our">Shelter for pets in Boston</div>
+            <div class="header__container">
+                <div class="logo">
+                    <a class="logo__link" href="./index.html">
+                        <div class="logo__title logo__title_dark">Cozy House</div>
+                        <h1 class="logo__subtitle logo__subtitle_dark">Shelter for pets in Boston</h1>
+                    </a>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link_dark" href="./index.html">About the shelter</a></li>
+                        <li class="navigation__item navigation__item_active"><a class="navigation__link_dark" href="#!">Our pets</a></li>
+                        <li class="navigation__item"><a class="navigation__link_dark" href="./index.html#help">Help the shelter</a></li>
+                        <li class="navigation__item"><a class="navigation__link_dark" href="#footer">Contacts </a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navigation">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="./" class="nav-link">About the shelter</a></li>
-                    <li class="nav-item"><a href="./" class="nav-link">Our pets</a></li>
-                    <li class="nav-item"><a href="./" class="nav-link">Help the shelter</a></li>
-                    <li class="nav-item"><a href="./" class="nav-link">Contacts </a></li>
-                </ul>
-            </nav>
         </div>
     </header>
     <main class="main">
-        <section class="pets">
-            <div class="wrapper pets-wrapper">
-                <h2 class="pets-title">Our friends who are looking for a house</h2>
-                <div class="pets-paginator"></div>
+        <section class="all-pets">
+            <div class="wrapper">
+                <div class="all-pets__container">
+                    <h2 class="all-pets__title">Our friends who<br>are looking for a house</h2>
+                    <div class="all-pets__paginator">
+                        <div class="all-pets__cards"></div>
+                        <div class="all-pets__buttons">
+                            <div class="button-nav button-nav_inactive"><span>&lt;&lt;</span></div>
+                            <div class="button-nav button-nav_inactive">&lt;</div>
+                            <div class="button-nav button-nav_active">1</div>
+                            <div class="button-nav">&gt;</div>
+                            <div class="button-nav">&gt;&gt;</div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="wrapper footer-wrapper">
-            <div class="footer-contacts">
-                <div class="contacts-column">
-                    <p class="contacts-title">For questions and suggestions</p>
-                    <ul class="contacts-list">
-                        <li class="contact-item">
-                            <img src="./assets/svg/footer/mail.svg" width="40" height="26" alt="Contact email"/>
-                            <a href="mailto:email@shelter.com" class="contacts-link">
-                                <span class="contact-data">email@shelter.com</span>
-                            </a>
-                        </li>
-                        <li class="contact-item">
-                            <img src="./assets/svg/footer/phone.svg" width="40" height="32" alt="Contact phone"/>
-                            <a href="tel:+136745677554" class="contacts-link">
-                                <span class="contact-data">+13&nbsp;674&nbsp;567&nbsp;75&nbsp;54</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="contacts-column">
-                    <p class="contacts-title">We are waiting for your visit</p>
-                    <ul class="contacts-list">
-                        <li class="contact-item">
-                            <img src="./assets/svg/footer/pin.svg" width="22" height="32" alt="Adress pin"/>
-                            <a href="https://www.google.com/maps" class="contacts-link">
-                                <span class="contact-data">1 Central Street, Boston (entrance from the store)</span>
-                            </a>
-                        </li>
-                        <li class="contact-item">
-                            <img src="./assets/svg/footer/pin.svg" width="22" height="32" alt="Adress pin"/>
-                            <a href="https://www.google.com/maps" class="contacts-link">
-                                <span class="contact-data">18 South Park, London</span>
-                            </a>
-                        </li>
-                    </ul>
+    <footer class="footer" id="footer">
+        <div class="wrapper">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__column">
+                        <p class="footer__title">For questions and suggestions</p>
+                        <ul class="footer__list">
+                            <li class="footer__contact-item">
+                                <img src="./assets/svg/footer/mail.svg" width="40" height="26" alt="Contact email"/>
+                                <a class="footer__link" href="mailto:email@shelter.com">email@shelter.com</a>
+                            </li>
+                            <li class="footer__contact-item">
+                                <img src="./assets/svg/footer/phone.svg" width="40" height="32" alt="Contact phone"/>
+                                <a class="footer__link" href="tel:+136745677554">+13&nbsp;674&nbsp;567&nbsp;75&nbsp;54</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__title">We are waiting for your visit</p>
+                        <ul class="footer__list">
+                            <li class="footer__contact-item">
+                                <img src="./assets/svg/footer/pin.svg" width="22" height="32" alt="Adress pin"/>
+                                <a class="footer__link" href="https://www.google.com/maps/@42.358865,-71.0539931,18z" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+                            </li>
+                            <li class="footer__contact-item">
+                                <img src="./assets/svg/footer/pin.svg" width="22" height="32" alt="Adress pin"/>
+                                <a class="footer__link" href="https://www.google.com/maps/@51.4692695,-0.1971373,16.25z" target="_blank">18 South Park, London</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

@@ -2,24 +2,23 @@
     padding: 17px 45px;
     @include font(1.7rem, 2.2rem);
     @extend %font-primary;
-    background: $color-primary;
     color: $color-dark-3xl;
     letter-spacing: 0.06em;
+    text-decoration: none;
+    background: $color-primary;
     border-radius: 100px;
     cursor: pointer;
-    text-decoration: none;
     transition: all 0.4s ease-in-out;
 
     &:hover {
         background: $color-primary-light;
     }
-
 }
 
 .button_light {
-    background: transparent;
     padding: 14px 43px;
     border: 2px solid  $color-primary;
+    background: transparent;
 
     &:hover {
         background: $color-primary-light;
@@ -30,5 +29,42 @@
 .pet-card:hover .button_light {
     background: $color-primary-light;
     border-color: $color-primary-light;
-
 }
+
+.button-nav {
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include font(2rem, 2.3rem);
+    color: $color-dark-3xl;
+    background: transparent;
+    border: 2px solid  $color-primary;
+    border-radius: 100px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background: $color-primary-light;
+        border-color: $color-primary-light;
+    }
+}
+
+.button-nav_active {
+    background: $color-primary;
+    border: 2px solid  $color-primary;
+}
+
+.button-nav_inactive  {
+    color: $color-dark-s;
+    border: 2px solid  $color-dark-s;
+    cursor: default;
+    pointer-events: none;
+}
+
+.button-nav__img {
+    display: block;
+    object-fit: contain;
+}
+

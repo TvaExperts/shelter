@@ -11,7 +11,7 @@ window.onload = function () {
 
 
 const getSlider = () => {
-    const slider = document.querySelector('.pets__slider');
+    const slider = document.querySelector('.pets__cards');
     slider.innerHTML = '';
     return slider;
 }
