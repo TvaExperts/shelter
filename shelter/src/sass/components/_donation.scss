@@ -3,7 +3,7 @@
 }
 
 .donation__container {
-    padding: 78px 142px 99px;
+    padding: 78px 142px 100px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -25,7 +25,7 @@
 }
 
 .donation__text {
-    padding: 21px 0 19px;
+    margin: 19px 0 20px;
     @include  font(1.5rem, 1.7rem);
     letter-spacing: 0.06em;
     color: $color-dark-l;

@@ -45,7 +45,7 @@
 
 .navigation__item {
     position: relative;
-    padding: 2px 0;
+    padding-bottom: 3px;
     color: $color-light-s;
     @extend %font-additional;
     transition: all 0.2s ease;
