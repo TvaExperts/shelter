@@ -25,7 +25,7 @@
 }
 
 .donation__text {
-    padding: 20px 0;
+    padding: 21px 0 19px;
     @include  font(1.5rem, 1.7rem);
     letter-spacing: 0.06em;
     color: $color-dark-l;
@@ -41,6 +41,11 @@
     background: $color_primary;
     border-radius: 9px;
     text-decoration: none;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background: $color_primary_light;
+    }
 }
 
 .donation__card-number {

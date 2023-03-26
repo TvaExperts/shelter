@@ -1,5 +1,5 @@
 .button {
-    padding: 17px 45px;
+    padding: 16px 45px;
     @include font(1.7rem, 2.2rem);
     @extend %font-primary;
     color: $color-dark-3xl;
@@ -16,7 +16,7 @@
 }
 
 .button_light {
-    padding: 14px 43px;
+    padding: 14.5px 43px;
     border: 2px solid  $color-primary;
     background: transparent;
 
@@ -39,32 +39,39 @@
     justify-content: center;
     @include font(2rem, 2.3rem);
     color: $color-dark-3xl;
+    letter-spacing: 0.06em;
     background: transparent;
     border: 2px solid  $color-primary;
     border-radius: 100px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 
     &:hover {
         background: $color-primary-light;
         border-color: $color-primary-light;
     }
+
+    &:active {
+        background: $color-primary;
+        border: 2px solid  $color-primary;
+    }
+
 }
 
-.button-nav_active {
+.button-nav_passive {
     background: $color-primary;
-    border: 2px solid  $color-primary;
+    cursor: default;
+    pointer-events: none;
 }
 
-.button-nav_inactive  {
+.button-nav_inactive {
     color: $color-dark-s;
     border: 2px solid  $color-dark-s;
     cursor: default;
     pointer-events: none;
 }
 
-.button-nav__img {
-    display: block;
-    object-fit: contain;
+.button-nav__img_reverse {
+    transform: rotate(180deg);
 }
 

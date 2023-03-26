@@ -1,8 +1,10 @@
 .footer {
+    flex: 1;
     background: url(../assets/img/footer/gradient.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
 .footer__container {
+    height: 100%;
     background-image: url(../assets/img/footer/footer-puppy.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
@@ -49,4 +51,10 @@
     @extend  %font-primary;
     color: $color_primary;
     letter-spacing: 0.06em;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: $color_primary_light;
+        text-decoration: underline;
+    }
 }
