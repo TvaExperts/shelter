@@ -2,11 +2,13 @@
   "scripts": {
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "deploy": "npm run dev && npx gh-pages -d dist -e shelter"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.3",
