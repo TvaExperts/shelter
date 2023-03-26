@@ -1,5 +1,11 @@
 .header {
     padding: 30px 0;
+    background-color: white;
+}
+
+.header_transparent {
+    margin-top: 30px;
+    background-color: transparent;
 }
 
 .header__container {
@@ -59,15 +65,6 @@
     color: $color-dark-l;
 }
 
-.navigation__item_opened {
-    cursor: default;
-    pointer-events: none;
-
-    &.navigation__item::after{
-        opacity: 1;
-    }
-}
-
 .navigation__item::after {
     position: absolute;
     content: '';
@@ -78,7 +75,6 @@
     bottom: 0;
     opacity: 0;
     transition: all 0.3s ease;
-
 }
 
 .navigation__link {
@@ -99,6 +95,15 @@
 
     &:hover {
         color: $color-dark-3xl;
+    }
+}
+
+.navigation__item_opened {
+    cursor: default;
+    pointer-events: none;
+
+    &.navigation__item::after{
+        opacity: 1;
     }
 }
 
