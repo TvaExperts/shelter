@@ -8,7 +8,7 @@ export class PetCard {
     // generator
     generatePetCard() {
         let template = '';
-        let petCard = document.createElement('petCard');
+        let petCard = document.createElement('div');
         petCard.className = 'pet-card';
         petCard.setAttribute('data-id', this.id);
 

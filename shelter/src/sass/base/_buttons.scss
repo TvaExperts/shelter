@@ -1,5 +1,5 @@
 .button {
-    padding: 16px 45px;
+    padding: 17px 45px;
     @include font(1.7rem, 2.2rem);
     @extend %font-primary;
     color: $color-dark-3xl;
@@ -8,25 +8,25 @@
     background: $color-primary;
     border-radius: 100px;
     cursor: pointer;
-    transition: all 0.4s ease-in-out;
-
-    &:hover {
-        background: $color-primary-light;
-    }
+    transition: all 0.3s ease-in-out;
 }
 
-.button_light {
+.button:hover {
+    background: $color-primary-light;
+}
+
+.button--light {
     padding: 14.5px 43px;
     border: 2px solid  $color-primary;
     background: transparent;
-
-    &:hover {
-        background: $color-primary-light;
-        border-color: $color-primary-light;
-    }
 }
 
-.pet-card:hover .button_light {
+.button--light:hover {
+    background: $color-primary-light;
+    border-color: $color-primary-light;
+}
+
+.pet-card:hover .button--light {
     background: $color-primary-light;
     border-color: $color-primary-light;
 }
@@ -45,33 +45,32 @@
     border-radius: 100px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-
-    &:hover {
-        background: $color-primary-light;
-        border-color: $color-primary-light;
-    }
-
-    &:active {
-        background: $color-primary;
-        border: 2px solid  $color-primary;
-    }
-
 }
 
-.button-nav_passive {
+.button-nav:hover {
+    background: $color-primary-light;
+    border-color: $color-primary-light;
+}
+
+.button-nav:active {
+    background: $color-primary;
+    border: 2px solid  $color-primary;
+}
+
+.button-nav--passive {
     background: $color-primary;
     cursor: default;
     pointer-events: none;
 }
 
-.button-nav_inactive {
+.button-nav--inactive {
     color: $color-dark-s;
     border: 2px solid  $color-dark-s;
     cursor: default;
     pointer-events: none;
 }
 
-.button-nav__img_reverse {
+.button-nav__img--reverse {
     transform: rotate(180deg);
 }
 

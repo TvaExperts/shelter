@@ -1,5 +1,6 @@
 .about {
     background-color: white;
+
 }
 
 .about__container {
@@ -7,6 +8,13 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include media-tablet {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 80px;
+        padding: 80px 138px 100px;
+    }
 }
 
 .about__img {
@@ -16,6 +24,12 @@
 .about__content {
     max-width: 430px;
     padding-top: 15px;
+
+    @include media-tablet {
+        max-width: none;
+        padding: 0;
+    }
+
 }
 
 .about__text {

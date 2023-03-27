@@ -3,9 +3,13 @@
     background-color: white;
 }
 
-.header_transparent {
+.header--transparent {
     margin-top: 30px;
     background-color: transparent;
+
+    @include media-laptop {
+        margin: 0;
+    }
 }
 
 .header__container {
@@ -19,18 +23,17 @@
 }
 
 .logo__title {
+    margin-bottom: 10px;
     @include font(3.2rem, 3.5rem);
     color: $color-primary;
     letter-spacing: 0.06em;
 }
 
-.logo__title_dark {
+.logo__title--dark {
     color: $color-dark-l;
 }
 
 .logo__subtitle {
-    width: 100%;
-    padding-top: 10px;
     @include font(1.3rem, 1.5rem);
     @extend %font-additional;
     color: $color-light-xl;
@@ -38,7 +41,7 @@
     text-align: center;
 }
 
-.logo__subtitle_dark {
+.logo__subtitle--dark {
     color: $color-dark-3xl;
 }
 
@@ -55,17 +58,9 @@
     color: $color-light-s;
     @extend %font-additional;
     transition: all 0.2s ease;
-
-    &:active.navigation__item::after{
-        opacity: 1;
-    }
 }
 
-.navigation__item_dark{
-    color: $color-dark-l;
-}
-
-.navigation__item::after {
+.navigation__item:after {
     position: absolute;
     content: '';
     width: 100%;
@@ -77,40 +72,47 @@
     transition: all 0.3s ease;
 }
 
+.navigation__item:active:after {
+    opacity: 1;
+}
+
+.navigation__item--dark {
+    color: $color-dark-l;
+}
+
+.navigation__item--opened {
+    cursor: default;
+    pointer-events: none;
+}
+
+.navigation__item--opened:after {
+    opacity: 1;
+}
+
 .navigation__link {
     color: $color-dark-s;
     @include font(1.5rem, 2.4rem);
     @extend %font-additional;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-
-    &:hover {
-        color: $color-light-s;
-    }
 }
 
-.navigation__link_dark {
-    color: $color-dark-l;
-    text-decoration: none;
-
-    &:hover {
-        color: $color-dark-3xl;
-    }
-}
-
-.navigation__item_opened {
-    cursor: default;
-    pointer-events: none;
-
-    &.navigation__item::after{
-        opacity: 1;
-    }
-}
-
-.navigation__item_opened .navigation__link {
+.navigation__link:hover {
     color: $color-light-s;
 }
 
-.navigation__item_opened .navigation__link_dark {
+.navigation__link--dark {
+    color: $color-dark-l;
+}
+
+.navigation__link--dark:hover {
+    color: $color-dark-3xl;
+}
+
+.navigation__item--opened .navigation__link {
+    color: $color-light-s;
+}
+
+.navigation__item--opened .navigation__link.navigation__link--dark {
     color: $color-dark-3xl;
 }

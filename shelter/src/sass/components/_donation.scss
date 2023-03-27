@@ -15,6 +15,7 @@
 }
 
 .donation__content {
+    display: none;
     max-width: 380px;
     padding-top: 3px;
 }
@@ -32,6 +33,7 @@
 }
 
 .donation__creditcard {
+
     padding: 10px 15px;
     margin-bottom: 20px;
     display: inline-flex;
@@ -42,10 +44,10 @@
     border-radius: 9px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
+}
 
-    &:hover {
-        background: $color_primary_light;
-    }
+.donation__creditcard:hover {
+    background: $color_primary_light;
 }
 
 .donation__card-number {

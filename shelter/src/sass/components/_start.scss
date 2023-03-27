@@ -1,25 +1,45 @@
 .start__container {
+
     background-image: url(../assets/img/start/start-screen-puppy.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    background-size: 58.1%;
+
+    @include media-laptop {
+        background-size: 569px;
+        //background-position:  50% 100%;
+    }
 }
 
 .start__content {
-    max-width: 460px;
-    padding: 193px 0 256px;
+    max-width: 39%;
+    padding: 194px 0 255px;
+
+    @include media-laptop {
+        max-width: none;
+        padding: 30px 124px 705px;
+        text-align: center;
+    }
+
 }
 
 .start__title {
     max-width: 320px;
+    margin-bottom: 43px;
     @include font(4.4rem, 5.7rem);
     color: $color-light-xl;
     letter-spacing: 0;
+    text-align: left;
 }
 
 .start__text {
-    padding: 43px 0 56px;
+    margin-bottom: 55px;
     @include  font(1.5rem, 2.4rem);
     @extend  %font-additional;
     color: $color-dark-s;
+    text-align: left;
+
 }
+
+
 

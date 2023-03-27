@@ -4,7 +4,7 @@ import { PetCard } from './js/petCard';
 import { petsArr } from './js/pets-data';
 
 window.onload = function () {
-    render3PetCardsToDom();
+    //render3PetCardsToDom();
     showGrade();
 }
 

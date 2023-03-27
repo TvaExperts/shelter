@@ -18,6 +18,10 @@
     padding: 0 53px;
     display: flex;
     justify-content: space-between;
+
+    @include media-tablet {
+        padding:0 10px;
+    }
 }
 
 

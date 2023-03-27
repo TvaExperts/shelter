@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/svg/favicon.svg">
 </head>
 <body>
-    <header class="header header_transparent">
+    <header class="header header--transparent">
         <div class="wrapper">
             <div class="header__container">
                 <div class="logo">
@@ -19,7 +19,7 @@
                 </div>
                 <nav class="navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item navigation__item_opened"><a class="navigation__link navigation__link_inactive" href="#">About the shelter</a></li>
+                        <li class="navigation__item navigation__item--opened"><a class="navigation__link navigation__link--inactive" href="#">About the shelter</a></li>
                         <li class="navigation__item"><a class="navigation__link" href="./our-pets.html">Our pets</a></li>
                         <li class="navigation__item"><a class="navigation__link" href="#help">Help the shelter</a></li>
                         <li class="navigation__item"><a class="navigation__link" href="#footer">Contacts </a></li>
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+       <section class="about">
             <div class="wrapper">
                 <div class="about__container">
                     <img class="about__img" src="./assets/img/about/about-pets.jpg" alt="Pets">
@@ -52,15 +52,18 @@
                 </div>
             </div>
         </section>
-        <section class="pets" id="pets">
+         <section class="pets" id="pets">
             <div class="wrapper">
                 <div class="pets__container">
                     <h2 class="pets__title">Our friends who<br>are looking for a house</h2>
                     <div class="pets__slider">
                         <div class="button-nav"><img class="button-nav__img" src="./assets/svg/pets/arrow-left.svg" alt="Arraw left"></div>
-                        <div class="pets__cards"></div>
+                        <div class="pets__cards">
+                            <div class="pet-card" data-id="1"><img class="pet-card__img" src="./assets/img/pets/katrine.jpg" alt="Katrine"><p class="pet-card__name">Katrine</p><span class="button button--light">Learn more</span></div>
+                            <div class="pet-card" data-id="2"><img class="pet-card__img" src="./assets/img/pets/katrine.jpg" alt="Katrine"><p class="pet-card__name">Katrine</p><span class="button button--light">Learn more</span></div>
+                        </div>
                         <div class="button-nav">
-                            <img class="button-nav__img button-nav__img_reverse" src="./assets/svg/pets/arrow-left.svg" alt="Arraw right">
+                            <img class="button-nav__img button-nav__img--reverse" src="./assets/svg/pets/arrow-left.svg" alt="Arraw right">
                         </div>
                     </div>
                     <a class="button" href="./our-pets.html">Get to know the rest</a>
