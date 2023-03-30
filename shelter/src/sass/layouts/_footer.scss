@@ -1,42 +1,97 @@
 .footer__container {
-    height: 100%;
-    background-image: url(../assets/img/footer/footer-puppy.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media-pet-2-cards {
+        padding: 31px 34px 0;
+        justify-content: center;
+        row-gap: 58px;
+    }
+
+    @include media-mobile {
+        padding: 31px 0 0;
+        row-gap: 41px;
+    }
 }
 
 .footer__content {
-    padding: 56px 0 53px;
+    padding-top: 17px;
     display: flex;
     gap: 159px;
+
+    @include media-pet-2-cards {
+        padding-top: 0;
+        justify-content: space-between;
+        gap: 44px;
+    }
+
+    @include media-burger {
+        flex-direction: column;
+    }
+
+    @include media-mobile {
+        gap: 41px;
+        text-align: center;
+    }
 }
 
 .footer__column {
-    max-width: 300px;
+    width: 300px;
+    @include media-pet-2-cards {
+        width: auto;
+    }
 }
 
 .footer__title {
-    max-width: 280px;
+    width: 280px;
+    margin-bottom: 32px;
     @include font(3.5rem, 4.5rem);
     color: $color-light-xl;
     letter-spacing: 0.06em;
+
+    @include media-pet-2-cards {
+        width: auto;
+    }
+
+    @include media-mobile {
+        width: 80%;
+        margin: 0 auto 42px;
+        @include font(2.5rem, 3.2rem);
+    }
 }
 
 .footer__list {
-    padding-top: 34px;
     list-style-type: none;
+
 }
 
 .footer__contact-item {
     height: 46px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
+    @include media-mobile {
+        height: auto;
+        margin-bottom: 42px;
+        justify-content: center;
+    }
 }
 
 .footer__contact-item:last-child {
     margin: 0;
+}
+
+.footer__contact-item--crooked {
+    @include media-mobile {
+        margin-bottom: 39px;
+        margin-top: -2px;
+        justify-content: flex-start;
+        text-align: left;
+    }
 }
 
 .footer__link {
@@ -53,3 +108,12 @@
     color: $color_primary_light;
     text-decoration: underline;
 }
+
+.footer__img {
+    display: block;
+    height: 310px;
+    @include media-mobile {
+        height: 269px;
+    }
+}
+

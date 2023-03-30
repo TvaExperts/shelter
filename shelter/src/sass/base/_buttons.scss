@@ -1,6 +1,6 @@
 .button {
-    padding: 17px 45px;
-    @include font(1.7rem, 2.2rem);
+    padding: 15px 45px;
+    @include font(1.7rem, 2.21rem);
     @extend %font-primary;
     color: $color-dark-3xl;
     letter-spacing: 0.06em;

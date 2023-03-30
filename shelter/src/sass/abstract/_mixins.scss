@@ -5,18 +5,19 @@
     font-style: $style;
 }
 
-@mixin media-laptop {
-    @media (max-width: $desktop-width) { @content; }
+@mixin media-pet-2-cards {
+    @media (max-width: $pet-2-cards-width) { @content; }
 }
 
 @mixin media-tablet {
     @media (max-width: $tablet-width) { @content; }
 }
 
-@mixin media-mobile {
-    @media (max-width: $mobile-big-width) { @content; }
-}
-
 @mixin media-burger {
     @media (max-width: $burger-width) { @content; }
 }
+
+@mixin media-mobile {
+    @media (max-width: $mobile-width) { @content; }
+}
+

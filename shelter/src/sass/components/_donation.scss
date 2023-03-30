@@ -3,37 +3,62 @@
 }
 
 .donation__container {
-    padding: 78px 142px 100px;
+    padding: 80px 142px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+
+    @include media-pet-2-cards {
+        padding: 81px 100px 100px;
+        flex-direction: column-reverse;
+        row-gap: 60px;
+    }
+
+    @include media-burger {
+        padding: 41px 10px 42px;
+        row-gap: 42px;
+    }
 }
 
 .donation__img {
-    padding-top: 13px;
     display: block;
+    @include media-burger {
+        width: 93.3%;
+    }
 }
 
 .donation__content {
-    display: none;
     max-width: 380px;
-    padding-top: 3px;
 }
 
-.donation-title {
+.donation__title {
     max-width: 300px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    @include media-pet-2-cards {
+        margin-bottom: 19px;
+    }
+
+    @include media-burger {
+        margin-bottom: 23px;
+        text-align: center;
+    }
 }
 
 .donation__text {
-    margin: 19px 0 20px;
+    margin-bottom: 20px;
     @include  font(1.5rem, 1.7rem);
     letter-spacing: 0.06em;
     color: $color-dark-l;
+
+    @include media-burger {
+        margin-bottom: 24px;
+        text-align: center;
+        letter-spacing: 0;
+    }
 }
 
 .donation__creditcard {
-
     padding: 10px 15px;
     margin-bottom: 20px;
     display: inline-flex;
@@ -44,6 +69,10 @@
     border-radius: 9px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
+
+    @include media-burger {
+        padding: 10px 14px;
+    }
 }
 
 .donation__creditcard:hover {
@@ -54,6 +83,10 @@
     @include font(2rem, 2.3rem);
     color: $color-dark-l;
     letter-spacing: 0.06em;
+
+    @include media-burger {
+        @include font(1.5rem, 1.7rem);
+    }
 }
 
 .donation__disclaimer {
@@ -61,4 +94,8 @@
     @include  font(1.2rem, 1.8rem);
     color: $color-dark-m;
     font-style: italic;
+
+    @include media-burger {
+        text-align: justify;
+    }
 }
