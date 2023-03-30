@@ -7,16 +7,20 @@
     padding: 80px 70px 100px;
 
     @include media-tablet {
-        padding: 80px 39px 100px;
+        padding: 81px 39px 100px;
     }
 
     @include media-mobile {
-        padding: 43px 5px;
+        padding: 42px 5px;
     }
 }
 
 .help__title {
     margin-bottom: 60px;
+
+    @include media-tablet {
+        margin-bottom: 59px;
+    }
 
     @include media-mobile {
         margin-bottom: 37px;
@@ -70,10 +74,12 @@
 
 .help__card-img {
     display: block;
+    max-height: 60px;
+    max-width: 60px;
 
     @include media-mobile {
-        height: 50px;
-        width: 50px;
+        max-height: 50px;
+        max-width: 50px;
     }
 }
 

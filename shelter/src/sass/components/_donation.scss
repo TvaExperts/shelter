@@ -9,26 +9,41 @@
     align-items: center;
 
     @include media-pet-2-cards {
-        padding: 81px 100px 100px;
+        padding: 81px 102px 100px;
         flex-direction: column-reverse;
         row-gap: 60px;
     }
 
+
     @include media-burger {
-        padding: 41px 10px 42px;
+        padding: 81px 55px 100px;
+    }
+
+    @include media-mobile {
+        padding: 42px 10px;
         row-gap: 42px;
     }
 }
 
 .donation__img {
     display: block;
-    @include media-burger {
+    width: 55.2%;
+
+    @include media-tablet {
+        width: 100%;
+    }
+
+    @include media-mobile {
         width: 93.3%;
     }
 }
 
 .donation__content {
     max-width: 380px;
+/*
+    @include media-burger {
+        text-align: center;
+    }*/
 }
 
 .donation__title {
@@ -39,7 +54,11 @@
         margin-bottom: 19px;
     }
 
-    @include media-burger {
+    /*@include media-burger {
+        margin: 0 auto 19px;
+    }*/
+
+    @include media-mobile {
         margin-bottom: 23px;
         text-align: center;
     }
@@ -51,7 +70,7 @@
     letter-spacing: 0.06em;
     color: $color-dark-l;
 
-    @include media-burger {
+    @include media-mobile {
         margin-bottom: 24px;
         text-align: center;
         letter-spacing: 0;
@@ -70,7 +89,7 @@
     text-decoration: none;
     transition: all 0.4s ease-in-out;
 
-    @include media-burger {
+    @include media-mobile {
         padding: 10px 14px;
     }
 }
@@ -84,7 +103,7 @@
     color: $color-dark-l;
     letter-spacing: 0.06em;
 
-    @include media-burger {
+    @include media-mobile {
         @include font(1.5rem, 1.7rem);
     }
 }
@@ -95,7 +114,7 @@
     color: $color-dark-m;
     font-style: italic;
 
-    @include media-burger {
+    @include media-mobile {
         text-align: justify;
     }
 }

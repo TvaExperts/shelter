@@ -21,3 +21,14 @@
     @media (max-width: $mobile-width) { @content; }
 }
 
+@mixin media-our-pets-6-cards-width {
+    @media (max-width: $our-pets-6-cards-width) { @content; }
+}
+
+@mixin media-our-pets-6-cards-vert-width {
+    @media (max-width: $our-pets-6-cards-vert-width) { @content; }
+}
+
+@mixin media-our-pets-3-cards-width {
+    @media (max-width: $our-pets-3-cards-vert-width) { @content; }
+}

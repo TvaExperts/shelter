@@ -1,6 +1,6 @@
 .pet-card {
     width: 270px;
-    padding-bottom: 43px;
+    height: 435px;
     text-align: center;
     border-radius: 9px;
     overflow: hidden;
@@ -13,10 +13,20 @@
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
+.pet-card__img {
+    display: block;
+    margin-bottom: 30px;
+}
+
 .pet-card__name {
-    margin: 24px 0 44px;
+    margin-bottom: 30px;
     @include  font(2rem, 2.27rem);
     color: $color-dark-l;
     letter-spacing: 0.06em;
+
+
+    @include media-mobile {
+        margin-bottom: 31px;
+    }
 }
 
