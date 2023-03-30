@@ -3,32 +3,78 @@
 }
 
 .donation__container {
-    padding: 78px 142px 100px;
+    padding: 80px 142px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+
+    @include media-pet-2-cards {
+        padding: 81px 102px 100px;
+        flex-direction: column-reverse;
+        row-gap: 60px;
+    }
+
+
+    @include media-burger {
+        padding: 81px 55px 100px;
+    }
+
+    @include media-mobile {
+        padding: 42px 10px;
+        row-gap: 42px;
+    }
 }
 
 .donation__img {
-    padding-top: 13px;
     display: block;
+    width: 55.2%;
+
+    @include media-tablet {
+        width: 100%;
+    }
+
+    @include media-mobile {
+        width: 93.3%;
+    }
 }
 
 .donation__content {
     max-width: 380px;
-    padding-top: 3px;
+/*
+    @include media-burger {
+        text-align: center;
+    }*/
 }
 
-.donation-title {
+.donation__title {
     max-width: 300px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    @include media-pet-2-cards {
+        margin-bottom: 19px;
+    }
+
+    /*@include media-burger {
+        margin: 0 auto 19px;
+    }*/
+
+    @include media-mobile {
+        margin-bottom: 23px;
+        text-align: center;
+    }
 }
 
 .donation__text {
-    margin: 19px 0 20px;
+    margin-bottom: 20px;
     @include  font(1.5rem, 1.7rem);
     letter-spacing: 0.06em;
     color: $color-dark-l;
+
+    @include media-mobile {
+        margin-bottom: 24px;
+        text-align: center;
+        letter-spacing: 0;
+    }
 }
 
 .donation__creditcard {
@@ -43,15 +89,23 @@
     text-decoration: none;
     transition: all 0.4s ease-in-out;
 
-    &:hover {
-        background: $color_primary_light;
+    @include media-mobile {
+        padding: 10px 14px;
     }
+}
+
+.donation__creditcard:hover {
+    background: $color_primary_light;
 }
 
 .donation__card-number {
     @include font(2rem, 2.3rem);
     color: $color-dark-l;
     letter-spacing: 0.06em;
+
+    @include media-mobile {
+        @include font(1.5rem, 1.7rem);
+    }
 }
 
 .donation__disclaimer {
@@ -59,4 +113,8 @@
     @include  font(1.2rem, 1.8rem);
     color: $color-dark-m;
     font-style: italic;
+
+    @include media-mobile {
+        text-align: justify;
+    }
 }

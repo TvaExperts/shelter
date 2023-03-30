@@ -8,24 +8,22 @@
     <link rel="icon" type="image/x-icon" href="./assets/svg/favicon.svg">
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="header__container">
-                <div class="logo">
-                    <a class="logo__link" href="./index.html">
-                        <div class="logo__title logo__title_dark">Cozy House</div>
-                        <h1 class="logo__subtitle logo__subtitle_dark">Shelter for pets in Boston</h1>
-                    </a>
-                </div>
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__item"><a class="navigation__link_dark" href="./index.html">About the shelter</a></li>
-                        <li class="navigation__item navigation__item_opened"><a class="navigation__link_dark" href="#!">Our pets</a></li>
-                        <li class="navigation__item"><a class="navigation__link_dark" href="./index.html#help">Help the shelter</a></li>
-                        <li class="navigation__item"><a class="navigation__link_dark" href="#footer">Contacts </a></li>
-                    </ul>
-                </nav>
+    <header class="header header--white">
+        <div class="wrapper header__container">
+            <div class="logo">
+                <a class="logo__link" href="./index.html">
+                    <div class="logo__title logo__title--dark">Cozy House</div>
+                    <h1 class="logo__subtitle logo__subtitle--dark">Shelter for pets in Boston</h1>
+                </a>
             </div>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link navigation__link--dark" href="./index.html">About the shelter</a></li>
+                    <li class="navigation__item navigation__item--opened"><a class="navigation__link navigation__link--dark" href="#!">Our pets</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link--dark" href="./index.html#help">Help the shelter</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link--dark" href="#footer">Contacts </a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main class="main">
@@ -34,11 +32,21 @@
                 <div class="all-pets__container">
                     <h2 class="all-pets__title">Our friends who<br>are looking for a house</h2>
                     <div class="all-pets__paginator">
-                        <div class="all-pets__cards"></div>
+                        <div class="all-pets__cards">
+                            <div class="pet-card" data-id="1"><img class="pet-card__img" src="./assets/img/pets/katrine.jpg" alt="Katrine"><p class="pet-card__name">Katrine</p><span class="button button--light">Learn more</span></div>
+                            <div class="pet-card card2" data-id="2"><img class="pet-card__img" src="./assets/img/pets/jennifer.jpg" alt="jennifer"><p class="pet-card__name">Jennifer</p><span class="button button--light">Learn more</span></div>
+                            <div class="pet-card card3" data-id="3"><img class="pet-card__img" src="./assets/img/pets/woody.jpg" alt="woody"><p class="pet-card__name">Woody</p><span class="button button--light">Learn more</span></div>
+                            <div class="pet-card card4" data-id="4"><img class="pet-card__img" src="./assets/img/pets/sophia.jpg" alt="Sophia"><p class="pet-card__name">Sophia</p><span class="button button--light">Learn more</span></div>
+                            <div class="pet-card card5" data-id="5"><img class="pet-card__img" src="./assets/img/pets/timmy.jpg" alt="Timmy"><p class="pet-card__name">Timmy</p><span class="button button--light">Learn more</span></div>
+                            <div class="pet-card card6" data-id="6"><img class="pet-card__img" src="./assets/img/pets/charly.jpg" alt="Charly"><p class="pet-card__name">Charly</p><span class="button button--light">Learn more</span></div>
+                            <div class="pet-card card7" data-id="7"><img class="pet-card__img" src="./assets/img/pets/scarlett.jpg" alt="Scarlett"><p class="pet-card__name">Scarlett</p><span class="button button--light">Learn more</span></div>
+                            <div class="pet-card card8" data-id="8"><img class="pet-card__img" src="./assets/img/pets/freddie.jpg" alt="Freddie"><p class="pet-card__name">Freddie</p><span class="button button--light">Learn more</span></div>
+
+                        </div>
                         <div class="all-pets__buttons">
-                            <div class="button-nav button-nav_inactive"><span>&lt;&lt;</span></div>
-                            <div class="button-nav button-nav_inactive">&lt;</div>
-                            <div class="button-nav button-nav_passive">1</div>
+                            <div class="button-nav button-nav--inactive"><span>&lt;&lt;</span></div>
+                            <div class="button-nav button-nav--inactive">&lt;</div>
+                            <div class="button-nav button-nav--passive">1</div>
                             <div class="button-nav">&gt;</div>
                             <div class="button-nav">&gt;&gt;</div>
                         </div>
@@ -68,17 +76,18 @@
                     <div class="footer__column">
                         <p class="footer__title">We are waiting for your visit</p>
                         <ul class="footer__list">
-                            <li class="footer__contact-item">
+                            <li class="footer__contact-item footer__contact-item--crooked">
                                 <img src="./assets/svg/footer/pin.svg" alt="Adress pin">
                                 <a class="footer__link" href="https://www.google.com/maps/@42.358865,-71.0539931,18z" target="_blank">1 Central Street, Boston (entrance from the store)</a>
                             </li>
-                            <li class="footer__contact-item">
+                            <li class="footer__contact-item footer__contact-item--crooked">
                                 <img src="./assets/svg/footer/pin.svg" alt="Adress pin">
                                 <a class="footer__link" href="https://www.google.com/maps/@51.4692695,-0.1971373,16.25z" target="_blank">18 South Park, London</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <img class="footer__img" src="./assets/img/footer/footer-puppy.png" alt="footer puppy">
             </div>
         </div>
     </footer>

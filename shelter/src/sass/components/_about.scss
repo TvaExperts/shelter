@@ -7,18 +7,65 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 13%;
+
+    @include media-pet-2-cards {
+        padding: 81px 139px 100px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 80px;
+    }
+
+    @include media-burger {
+        width: 85%;
+        margin: 0 auto;
+        padding: 42px 0;
+        gap: 41px;
+    }
+
+    @include media-mobile {
+        width: 100%;
+        padding: 42px 15px;
+        gap: 41px;
+    }
 }
 
 .about__img {
     display: block;
+    @include media-mobile {
+        max-width: 96.2%;
+    }
 }
 
 .about__content {
     max-width: 430px;
     padding-top: 15px;
+
+    @include media-pet-2-cards {
+        max-width: none;
+        padding: 0;
+    }
+}
+
+.about__title {
+    margin-bottom: 24px;
+    @include media-mobile {
+        margin-bottom: 25px;
+        text-align: center;
+    }
 }
 
 .about__text {
-    padding-top: 25px;
+    margin-bottom: 25px;
     @extend  %font-additional;
+    @include font(1.5rem, 2.4rem);
+
+    @include media-mobile {
+        margin-bottom: 22px;
+        text-align: justify;
+    }
+}
+
+.about__text:last-child {
+    margin: 0;
 }

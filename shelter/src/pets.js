@@ -5,7 +5,7 @@ import { petsArr } from './js/pets-data';
 
 window.onload = function () {
 
-    renderPetCardsToDom();
+    //renderPetCardsToDom();
 
 }
 

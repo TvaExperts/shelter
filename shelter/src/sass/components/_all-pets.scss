@@ -5,24 +5,79 @@
 .all-pets__container {
     padding: 80px 0 100px;
     text-align: center;
+
+    @include  media-our-pets-6-cards-vert-width {
+        padding: 80px 0 77px;
+    }
+
+    @include media-our-pets-3-cards-width {
+        padding: 42px 0 43px;
+    }
 }
 
-.all-pets__paginator {
-    padding-top: 60px;
+.all-pets__title {
+    margin-bottom: 60px;
+
+    @include  media-our-pets-6-cards-vert-width {
+        margin-bottom: 30px;
+    }
+
+    @include media-our-pets-3-cards-width {
+        margin-bottom: 41px;
+    }
+
 }
 
 .all-pets__cards {
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 30px;
+
+    @include media-our-pets-6-cards-width {
+        column-gap: 40px;
+    }
+
+    @include  media-our-pets-6-cards-vert-width {
+        margin-bottom: 40px;
+        justify-content: center;
+        column-gap: 40px;
+    }
+
+    @include media-our-pets-3-cards-width {
+        flex-direction: column;
+    }
+
+    @include media-our-pets-3-cards-width {
+        margin-bottom: 43px;
+    }
+}
+
+.card7,
+.card8 {
+    @include media-our-pets-6-cards-width {
+        display: none;
+
+    }
+}
+
+.card4,
+.card5,
+.card6 {
+    @include media-our-pets-3-cards-width {
+        display: none;
+    }
 }
 
 .all-pets__buttons {
     width: 100%;
-    padding-top: 60px;
     display: flex;
     justify-content: center;
     column-gap: 20px;
+
+    @include media-our-pets-3-cards-width {
+        column-gap: 10px;
+    }
 }

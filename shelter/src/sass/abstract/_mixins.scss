@@ -4,3 +4,31 @@
     font-weight: $weight;
     font-style: $style;
 }
+
+@mixin media-pet-2-cards {
+    @media (max-width: $pet-2-cards-width) { @content; }
+}
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-burger {
+    @media (max-width: $burger-width) { @content; }
+}
+
+@mixin media-mobile {
+    @media (max-width: $mobile-width) { @content; }
+}
+
+@mixin media-our-pets-6-cards-width {
+    @media (max-width: $our-pets-6-cards-width) { @content; }
+}
+
+@mixin media-our-pets-6-cards-vert-width {
+    @media (max-width: $our-pets-6-cards-vert-width) { @content; }
+}
+
+@mixin media-our-pets-3-cards-width {
+    @media (max-width: $our-pets-3-cards-vert-width) { @content; }
+}
