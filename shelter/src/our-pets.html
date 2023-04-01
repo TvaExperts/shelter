@@ -9,21 +9,27 @@
 </head>
 <body>
     <header class="header header--white">
-        <div class="wrapper header__container">
-            <div class="logo">
-                <a class="logo__link" href="./index.html">
-                    <div class="logo__title logo__title--dark">Cozy House</div>
-                    <h1 class="logo__subtitle logo__subtitle--dark">Shelter for pets in Boston</h1>
-                </a>
+        <div class="wrapper">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a class="header__logo-link" href="#!">
+                        <div class="header__logo-title header__logo-title--dark">Cozy House</div>
+                        <h1 class="header__logo-subtitle header__logo-subtitle--dark">Shelter for pets in Boston</h1>
+                    </a>
+                </div>
+                <nav class="header__navigation">
+                    <div class="header__burger">
+                        <span class="header__burger-line"></span>
+                    </div>
+                    <ul class="header__navigation-list header__navigation-list--white">
+                        <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--dark" href="./index.html">About the shelter</a></li>
+                        <li class="header__navigation-item header__navigation-item--opened"><a class="header__navigation-link header__navigation-link--dark" href="#!">Our pets</a></li>
+                        <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--dark" href="./index.html#help">Help the shelter</a></li>
+                        <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--dark" href="#footer">Contacts </a></li>
+                    </ul>
+                    <div class="overlay"></div>
+                </nav>
             </div>
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link navigation__link--dark" href="./index.html">About the shelter</a></li>
-                    <li class="navigation__item navigation__item--opened"><a class="navigation__link navigation__link--dark" href="#!">Our pets</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--dark" href="./index.html#help">Help the shelter</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--dark" href="#footer">Contacts </a></li>
-                </ul>
-            </nav>
         </div>
     </header>
     <main class="main">

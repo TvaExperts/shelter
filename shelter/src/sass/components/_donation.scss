@@ -29,21 +29,23 @@
     display: block;
     width: 55.2%;
 
-    @include media-tablet {
-        width: 100%;
+    @include media-pet-2-cards {
+        width: auto;
+        max-width: 100%;
     }
 
+
     @include media-mobile {
+        max-width: none;
         width: 93.3%;
     }
 }
 
 .donation__content {
     max-width: 380px;
-/*
-    @include media-burger {
+    @include media-mobile {
         text-align: center;
-    }*/
+    }
 }
 
 .donation__title {
@@ -54,11 +56,8 @@
         margin-bottom: 19px;
     }
 
-    /*@include media-burger {
-        margin: 0 auto 19px;
-    }*/
-
     @include media-mobile {
+        max-width: none;
         margin-bottom: 23px;
         text-align: center;
     }
@@ -72,7 +71,6 @@
 
     @include media-mobile {
         margin-bottom: 24px;
-        text-align: center;
         letter-spacing: 0;
     }
 }
@@ -87,9 +85,10 @@
     background: $color_primary;
     border-radius: 9px;
     text-decoration: none;
-    transition: all 0.4s ease-in-out;
+    @extend %transition03s;
 
     @include media-mobile {
+
         padding: 10px 14px;
     }
 }

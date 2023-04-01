@@ -5,30 +5,40 @@
     font-style: $style;
 }
 
-@mixin media-pet-2-cards {
-    @media (max-width: $pet-2-cards-width) { @content; }
-}
 
-@mixin media-tablet {
+/* ========================== Media ======================== */
+
+
+// ============= Global
+
+@mixin media-tablet {                       // 890px
     @media (max-width: $tablet-width) { @content; }
 }
 
-@mixin media-burger {
+@mixin media-burger {                       // 767px
     @media (max-width: $burger-width) { @content; }
 }
 
-@mixin media-mobile {
+@mixin media-mobile {                       // 500px
     @media (max-width: $mobile-width) { @content; }
 }
 
-@mixin media-our-pets-6-cards-width {
+// ============= Main page
+
+@mixin media-pet-2-cards {                  // 1120px;
+    @media (max-width: $pet-2-cards-width) { @content; }
+}
+
+// ============= Our Pets page
+
+@mixin media-our-pets-6-cards-width {       // 1280px;
     @media (max-width: $our-pets-6-cards-width) { @content; }
 }
 
-@mixin media-our-pets-6-cards-vert-width {
+@mixin media-our-pets-6-cards-vert-width {  // 970px;
     @media (max-width: $our-pets-6-cards-vert-width) { @content; }
 }
 
-@mixin media-our-pets-3-cards-width {
+@mixin media-our-pets-3-cards-width {       // 600px;
     @media (max-width: $our-pets-3-cards-vert-width) { @content; }
 }
