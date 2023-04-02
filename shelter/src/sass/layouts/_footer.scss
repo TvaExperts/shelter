@@ -1,3 +1,7 @@
+.footer {
+    background: url(../assets/img/start/gradient.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+}
+
 .footer__container {
     padding-top: 40px;
     display: flex;
@@ -101,7 +105,7 @@
     @extend  %font-primary;
     color: $color_primary;
     letter-spacing: 0.06em;
-    transition: all 0.3s ease-in-out;
+    @extend %transition03s;
 }
 
 .footer__link:hover {

@@ -1,11 +1,10 @@
-//Colors
+/* ========================== Colors ================== */
+
 $color_primary: #F1CDB3;
 $color-primary-light: #FDDCC4;
-
 $color-light-s: #FAFAFA;
 $color-light-l: #F6F6F6;
 $color-light-xl: #FFFFFF;
-
 $color-dark-s: #CDCDCD;
 $color-dark-m: #B2B2B2;
 $color-dark-l: #545454;
@@ -13,13 +12,18 @@ $color-dark-xl: #4C4C4C;
 $color-dark-2xl: #444444;
 $color-dark-3xl: #292929;
 
-//Widths
+/* ========================== Widths ================== */
+
 $desktop-width: 1280px;
+$tablet-width: 890px;
+$burger-width: 767px;
+$mobile-width: 500px;
+
+// ============ Main page
 
 $pet-2-cards-width: 1120px;
-$tablet-width: 890px;
-$burger-width: 750px;
-$mobile-width: 500px;
+
+// ============ Our pets page
 
 $our-pets-6-cards-width: 1280px;
 $our-pets-6-cards-vert-width: 970px;

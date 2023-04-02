@@ -5,7 +5,7 @@
     border-radius: 9px;
     overflow: hidden;
     background: $color-light-s;
-    transition: all 0.4s ease-in-out;
+    @extend %transition03s;
 }
 
 .pet-card:hover {

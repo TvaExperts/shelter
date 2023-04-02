@@ -3,11 +3,25 @@ import './sass/our-pets.scss'
 import { PetCard } from './js/petCard';
 import { petsArr } from './js/pets-data';
 
+import { addBurgerClickHandler, addMenuLinkClickHandler, addOverlayClickHandler } from './js/burger';
+
+
 window.onload = function () {
+
+    // Burger
+
+    //addBurgerClickHandler();
+    //addMenuLinkClickHandler();
+    //addOverlayClickHandler();
 
     //renderPetCardsToDom();
 
 }
+
+
+
+
+
 
 const getPetsPaginator = () => {
     const paginator = document.querySelector('.all-pets__cards');
