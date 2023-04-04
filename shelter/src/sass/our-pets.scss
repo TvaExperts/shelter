@@ -4,7 +4,7 @@
 
 @import "./base/base";
 @import "./base/buttons";
-@import "./base/pet-card";
+
 
 
 @import "./layouts/wrapper";
@@ -12,3 +12,5 @@
 @import "./layouts/footer";
 
 @import "./components/all-pets";
+@import "./components/pet-card";
+@import "./components/pet-modal";

@@ -3,20 +3,44 @@ import './sass/index.scss'
 import { PetCard } from './js/petCard';
 import { petsArr } from './js/pets-data';
 
-import { addBurgerClickHandler, addMenuLinkClickHandler, addOverlayClickHandler } from './js/burger';
+import { addBurgerClickHandler, addMenuLinkClickHandler} from './js/burger';
+
+import { PetModal } from './js/PetModal';
+
+
 
 window.onload = function () {
 
     // Burger
 
-    //addBurgerClickHandler();
-    //addMenuLinkClickHandler();
+    addBurgerClickHandler();
+    addMenuLinkClickHandler();
     //addOverlayClickHandler();
 
 
-    showGrade();
+
+    addPetCardClickHandler();
+
+    //showGrade();
 }
 
+const slider = document.querySelector('.pets__cards');
+
+const addPetCardClickHandler = () => {
+    slider.addEventListener ('click', (e) => {
+        if (e.target.closest('.pet-card')) {
+            const clickedCardId = e.target.closest('.pet-card').getAttribute('data-id');
+            const cardContent = getDataById(clickedCardId);
+            const cardModal = new PetModal (cardContent);
+
+            cardModal.buildModal();
+        }
+    })
+}
+
+const getDataById = (id) => {
+    return petsArr.find(card => card.id == id);
+}
 
 
 const getSlider = () => {

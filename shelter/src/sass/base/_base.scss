@@ -25,24 +25,43 @@ h2 {
     }
 }
 
-.disable-burger-scroll {
-    @include media-burger {
-        height: 100vh;
-        overflow: hidden;
+h3 {
+    @include font(2.0rem, 2.3rem);
+    color: $color-dark-l;
+    letter-spacing: 0.06em;
+
+}
+
+h4 {
+    @include font(1.5rem, 1.7rem);
+    letter-spacing: 0.06em;
+
+    @include media-tablet  {
+        @include font(1.3rem, 1.4rem);
     }
 }
 
+
+
+.disable-scroll {
+
+        height: 100vh;
+        overflow: hidden;
+
+}
+
 .overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+    position: fixed;
     top: 0;
     left: 0;
-    opacity: 0;
-    background-color: black;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(41, 41, 41, 0.6);
     @extend %transition03s;
-
 }
 
 
