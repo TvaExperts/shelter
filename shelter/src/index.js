@@ -1,67 +1,24 @@
 import './sass/index.scss'
 
-import { PetCard } from './js/petCard';
-import { petsArr } from './js/pets-data';
-
 import { addBurgerClickHandler, addMenuLinkClickHandler} from './js/burger';
 
-import { PetModal } from './js/PetModal';
+import { Slider } from './js/mySlider';
 
 
 
 window.onload = function () {
 
-    // Burger
+    // burger
 
     addBurgerClickHandler();
     addMenuLinkClickHandler();
-    //addOverlayClickHandler();
 
+    // slider
 
-
-    addPetCardClickHandler();
+    const slider = new Slider();
+    slider.drawCardsInSlider();
 
     //showGrade();
-}
-
-const slider = document.querySelector('.pets__cards');
-
-const addPetCardClickHandler = () => {
-    slider.addEventListener ('click', (e) => {
-        if (e.target.closest('.pet-card')) {
-            const clickedCardId = e.target.closest('.pet-card').getAttribute('data-id');
-            const cardContent = getDataById(clickedCardId);
-            const cardModal = new PetModal (cardContent);
-
-            cardModal.buildModal();
-        }
-    })
-}
-
-const getDataById = (id) => {
-    return petsArr.find(card => card.id == id);
-}
-
-
-const getSlider = () => {
-    const slider = document.querySelector('.pets__cards');
-    slider.innerHTML = '';
-    return slider;
-}
-
-const render3PetCardsToDom = () => {
-    let slider = getSlider();
-    generate3PetCards(petsArr).forEach(petData => {
-        slider.append(petData.generatePetCard())
-    })
-}
-
-const generate3PetCards = (data) => {
-    let petCards = [];
-    for (let i=0; i < 3; i++) {
-        petCards.push(new PetCard(data[i]))
-    }
-    return petCards;
 }
 
 const showGrade = () => {

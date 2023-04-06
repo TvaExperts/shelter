@@ -1,25 +1,15 @@
 import './sass/our-pets.scss'
-
-import { PetCard } from './js/petCard';
-import { petsArr } from './js/pets-data';
-
-
 import { addBurgerClickHandler, addMenuLinkClickHandler} from './js/burger';
 
-import { PetModal } from './js/PetModal';
+document.addEventListener("DOMContentLoaded", () => {
+   // Burger
 
+   addBurgerClickHandler();
+   addMenuLinkClickHandler();
 
-
-window.onload = function () {
-
-    // Burger
-
-    addBurgerClickHandler();
-    addMenuLinkClickHandler();
-
-    addPetCardClickHandler();
-}
-
+   //addPetCardClickHandler();
+});
+/*
 const paginator = document.querySelector('.all-pets__cards');
 
 const addPetCardClickHandler = () => {
@@ -60,5 +50,5 @@ const generatePetCards = (data) => {
         petCards.push(new PetCard(petData))
     });
     return petCards;
-}
+}*/
 

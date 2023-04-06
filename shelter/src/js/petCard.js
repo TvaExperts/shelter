@@ -5,7 +5,6 @@ export class PetCard {
         this.urlToImage = urlToImage;
     }
 
-    // generator
     generatePetCard() {
         let template = '';
         let petCard = document.createElement('div');
@@ -17,7 +16,7 @@ export class PetCard {
 
         if (this.name) {
             template += `<p class="pet-card__name">${this.name}</p>`;
-            template += `<span class="button button_light">Learn more</span>`;
+            template += `<span class="button button--light">Learn more</span>`;
         }
         petCard.innerHTML = template;
         return petCard;

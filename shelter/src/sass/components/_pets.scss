@@ -42,13 +42,11 @@
     }
 }
 
-
-
 .pets__cards {
     position: relative;
     width: 82.5%;
-    display: flex;
-    justify-content: space-between;
+    height: 435px;
+    overflow: hidden;
 
     @include media-tablet {
         padding: 0 2px;

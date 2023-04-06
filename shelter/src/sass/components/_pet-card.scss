@@ -1,11 +1,15 @@
 .pet-card {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 270px;
     height: 435px;
     text-align: center;
     border-radius: 9px;
     overflow: hidden;
     background: $color-light-s;
-    @extend %transition03s;
+
+    @extend %transitionSlider;
 }
 
 .pet-card:hover {
