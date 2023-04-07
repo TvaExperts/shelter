@@ -13,9 +13,19 @@ const toggleOverlay = () => {
         overlay.addEventListener('click', closeBurger);
         document.body.append(overlay);
     } else {
-        closeBurger()
+        closeBurger();
     }
 }
+
+const checkWidthChanges = () => {
+    if (document.querySelector('.header__navigation').classList.contains('_open')) {
+        if (window.innerWidth >= 768) {
+            closeBurger();
+        }
+    }
+}
+
+window.addEventListener('resize', checkWidthChanges);
 
 const closeBurger = () => {
     document.body.classList.remove('disable-scroll');

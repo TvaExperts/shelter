@@ -1,11 +1,15 @@
 import './sass/our-pets.scss'
 import { addBurgerClickHandler, addMenuLinkClickHandler} from './js/burger';
+import { Paginator } from './js/myPaginator';
 
 document.addEventListener("DOMContentLoaded", () => {
    // Burger
 
    addBurgerClickHandler();
    addMenuLinkClickHandler();
+
+   const paginator = new Paginator();
+   paginator.drawPaginator();
 
    //addPetCardClickHandler();
 });

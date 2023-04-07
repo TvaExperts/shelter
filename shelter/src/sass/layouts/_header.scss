@@ -18,6 +18,10 @@
 
 /*=========================================== Logo block ========================================== */
 
+.header__logo {
+    flex-shrink: 0;
+}
+
 .header__logo-link {
     text-decoration: none;
 }
@@ -54,7 +58,7 @@
     align-items: flex-start;
     gap: 36px;
     list-style-type: none;
-    @extend %transition03s;
+    transition: right 0.3s ease;
 
     @include media-burger {
         position: fixed;
@@ -139,13 +143,6 @@
         right: 0;
     }
 }
-/*
-.header__navigation._open .overlay {
-    @include media-burger {
-        z-index: 1;
-        opacity: 0.6;
-    }
-}*/
 
 /*=========================================== Burger block ======================================= */
 

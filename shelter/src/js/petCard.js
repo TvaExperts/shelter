@@ -1,14 +1,18 @@
 export class PetCard {
-    constructor({ id, name, urlToImage, ...rest }) {
+    constructor({ id, name, urlToImage, ...rest }, classesAd='') {
         this.id = id;
         this.name = name;
         this.urlToImage = urlToImage;
+        this.classesAd = classesAd;
     }
 
     generatePetCard() {
         let template = '';
         let petCard = document.createElement('div');
         petCard.className = 'pet-card';
+        if (this.classesAd) {
+            petCard.classList.add(this.classesAd);
+        }
         petCard.setAttribute('data-id', this.id);
 
         this.urlToImage &&

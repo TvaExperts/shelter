@@ -55,22 +55,6 @@
     }
 }
 
-.card7,
-.card8 {
-    @include media-our-pets-6-cards-width {
-        display: none;
-
-    }
-}
-
-.card4,
-.card5,
-.card6 {
-    @include media-our-pets-3-cards-width {
-        display: none;
-    }
-}
-
 .all-pets__buttons {
     width: 100%;
     display: flex;

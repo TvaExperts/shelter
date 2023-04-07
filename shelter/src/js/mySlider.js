@@ -40,9 +40,7 @@ export class Slider {
     }
 
     initCardsMap = () => {
-        for (let i = 0; i < this.numCardsInSlider; i++) {
-            this.cardsMap.cur.push(i + 1);
-        }
+        this.addNewRandomNumInMap(this.cardsMap.cur, this.numCardsInSlider);
         this.cardsMap.next = this.generateNewRandomArr(this.cardsMap.cur);
         this.cardsMap.prev = this.generateNewRandomArr(this.cardsMap.cur);
 
@@ -81,7 +79,8 @@ export class Slider {
 
     addPrevCards = () => {
         for (let i = 0; i < this.numCardsInSlider; i++) {
-            let petCard = (new PetCard(this.getCardDataById(this.cardsMap.prev[i]))).generatePetCard();
+            const petData = this.getCardDataById(this.cardsMap.prev[i]);
+            let petCard = (new PetCard(petData,'pet-card--absolute')).generatePetCard();
             petCard.style.left = (this.calculateLeftPosition(i - this.numCardsInSlider)) + 'px';
             this.slider.prepend(petCard);
         }
@@ -89,7 +88,8 @@ export class Slider {
 
     addCurCards = () => {
         for (let i = 0; i < this.numCardsInSlider; i++) {
-            let petCard = (new PetCard(this.getCardDataById(this.cardsMap.cur[i]))).generatePetCard();
+            const petData = this.getCardDataById(this.cardsMap.cur[i]);
+            let petCard = (new PetCard(petData,'pet-card--absolute')).generatePetCard();
             petCard.style.left = this.calculateLeftPosition(i) + 'px';
             this.slider.append(petCard);
         }
@@ -97,7 +97,8 @@ export class Slider {
 
     addNextCards = () => {
         for (let i = 0; i < this.numCardsInSlider; i++) {
-            let petCard = (new PetCard(this.getCardDataById(this.cardsMap.next[i]))).generatePetCard();
+            const petData = this.getCardDataById(this.cardsMap.next[i]);
+            let petCard = (new PetCard(petData,'pet-card--absolute')).generatePetCard();
             petCard.style.left = this.calculateLeftPosition(i + this.numCardsInSlider) + 'px';
             this.slider.append(petCard);
         }
@@ -145,14 +146,6 @@ export class Slider {
         this.cardsMap.prev = this.cardsMap.cur;
         this.cardsMap.cur = this.cardsMap.next;
         this.cardsMap.next = this.generateNewRandomArr(this.cardsMap.cur);
-    }
-
-    addNextCards = () => {
-        for (let i = 0; i < this.numCardsInSlider; i++) {
-            let petCard = (new PetCard(petsArr[this.cardsMap.next[i]-1])).generatePetCard();
-            petCard.style.left = this.calculateLeftPosition(i + this.numCardsInSlider) + 'px';
-            this.slider.append(petCard);
-        }
     }
 
     updatePositionCards = () => {
