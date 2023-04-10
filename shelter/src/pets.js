@@ -1,24 +1,36 @@
 import './sass/our-pets.scss'
+import { addBurgerClickHandler, addMenuLinkClickHandler} from './js/burger';
+import { Paginator } from './js/myPaginator';
 
-import { PetCard } from './js/petCard';
-import { petsArr } from './js/pets-data';
+document.addEventListener("DOMContentLoaded", () => {
+   // Burger
 
-import { addBurgerClickHandler, addMenuLinkClickHandler, addOverlayClickHandler } from './js/burger';
+   addBurgerClickHandler();
+   addMenuLinkClickHandler();
 
+   const paginator = new Paginator();
+   paginator.drawPaginator();
 
-window.onload = function () {
+   //addPetCardClickHandler();
+});
+/*
+const paginator = document.querySelector('.all-pets__cards');
 
-    // Burger
-
-    //addBurgerClickHandler();
-    //addMenuLinkClickHandler();
-    //addOverlayClickHandler();
-
-    //renderPetCardsToDom();
-
+const addPetCardClickHandler = () => {
+    paginator.addEventListener ('click', (e) => {
+        if (e.target.closest('.pet-card')) {
+            const clickedCardId = e.target.closest('.pet-card').getAttribute('data-id');
+            const cardContent = getDataById(clickedCardId);
+            const cardModal = new PetModal (cardContent);
+            cardModal.buildModal();
+        }
+    })
 }
 
 
+const getDataById = (id) => {
+    return petsArr.find(card => card.id == id);
+}
 
 
 
@@ -42,5 +54,5 @@ const generatePetCards = (data) => {
         petCards.push(new PetCard(petData))
     });
     return petCards;
-}
+}*/
 

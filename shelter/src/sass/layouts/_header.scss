@@ -18,6 +18,10 @@
 
 /*=========================================== Logo block ========================================== */
 
+.header__logo {
+    flex-shrink: 0;
+}
+
 .header__logo-link {
     text-decoration: none;
 }
@@ -54,13 +58,13 @@
     align-items: flex-start;
     gap: 36px;
     list-style-type: none;
-    @extend %transition03s;
+    transition: right 0.3s ease;
 
     @include media-burger {
         position: fixed;
         top: 0px;
         right: -100%;
-        z-index: 2;
+        z-index: 5;
         width: 320px;
         height: 100vh;
         flex-direction: column;
@@ -86,12 +90,8 @@
     }
 }
 
-.header__navigation-item--opened {
-    cursor: default;
-    pointer-events: none;
-}
-
 .header__navigation-item--opened .header__navigation-link {
+    cursor: default;
     padding-bottom: 4px;
     border-bottom: 3px solid $color-primary;
     @include media-burger {
@@ -140,13 +140,6 @@
     }
 }
 
-.header__navigation._open .overlay {
-    @include media-burger {
-        z-index: 1;
-        opacity: 0.7;
-    }
-}
-
 /*=========================================== Burger block ======================================= */
 
 .header__burger {
@@ -156,7 +149,7 @@
         position: absolute;
         right: 30px;
         top: 49px;
-        z-index: 3;
+        z-index: 6;
         width: 30px;
         height: 22px;
         display: block;
