@@ -90,12 +90,8 @@
     }
 }
 
-.header__navigation-item--opened {
-    cursor: default;
-    pointer-events: none;
-}
-
 .header__navigation-item--opened .header__navigation-link {
+    cursor: default;
     padding-bottom: 4px;
     border-bottom: 3px solid $color-primary;
     @include media-burger {

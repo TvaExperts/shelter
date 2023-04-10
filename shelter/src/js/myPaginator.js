@@ -42,7 +42,13 @@ export class Paginator {
 
     generateCardsArray = () => {
         this.cardsArray = [...this.generateArray24(), ...this.generateArray24()];
-        console.log(this.cardsArray);
+        console.log('Страницы пагинации:')
+        for (let i = 0; i < 6; i++) {
+            console.log(this.cardsArray.slice(i*8,i*8+8));
+        }
+        for (let i = 0; i < 8; i++) {
+            console.log(this.cardsArray.slice(i*6,i*6+6));
+        }
     }
 
     generateArray24 = () => {

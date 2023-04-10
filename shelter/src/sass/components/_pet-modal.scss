@@ -1,10 +1,11 @@
 .pet-modal {
     position: relative;
     width: 900px;
-    //height: 500px;
+
     background: $color-light-s;
     border-radius: 9px;
     color: black;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 
     @include media-pet-2-cards  {
         //height: 350px;
@@ -35,6 +36,8 @@
     border: 2px solid $color-primary;
     border-radius: 100px;
     cursor: pointer;
+    @extend %transition03s;
+
 
     @include media-pet-2-cards  {
         right: -43px;
@@ -43,6 +46,10 @@
     @include media-burger  {
         right: -30px;
     }
+}
+
+.pet-modal__close-button:hover {
+    background-color: $color-primary;
 }
 
 .pet-modal__container {

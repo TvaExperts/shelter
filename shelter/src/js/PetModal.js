@@ -11,7 +11,6 @@ export class PetModal {
         this.parasites = parasites;
     }
 
-
     buildModal() {
         const overlay = this.createDomNode('div', 'overlay')
         const modal = this.createDomNode('div', 'pet-modal');
@@ -57,7 +56,6 @@ export class PetModal {
         container.appendChild(content);
         return container;
     }
-
 
     createDomNode (element, ...classes) {
         const node = document.createElement(element);

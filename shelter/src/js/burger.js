@@ -25,22 +25,26 @@ const checkWidthChanges = () => {
     }
 }
 
+
 window.addEventListener('resize', checkWidthChanges);
 
-const closeBurger = () => {
-    document.body.classList.remove('disable-scroll');
-    document.querySelector('.overlay').remove();
-    document.querySelector('.header__navigation').classList.remove('_open');
+
+
+const closeBurger = (event) => {
+        document.body.classList.remove('disable-scroll');
+        if (document.querySelector('.overlay')) document.querySelector('.overlay').remove();
+        document.querySelector('.header__navigation').classList.remove('_open');
 }
 
 
 const addMenuLinkClickHandler = () => {
+
     const menuLinks = document.querySelectorAll('.header__navigation-link');
+
     menuLinks.forEach(menuLink => {
         menuLink.addEventListener('click', closeBurger);
     });
 }
-
 
 export { addBurgerClickHandler };
 export { addMenuLinkClickHandler };

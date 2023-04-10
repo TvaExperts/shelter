@@ -78,7 +78,7 @@ export class Slider {
     }
 
     addPrevCards = () => {
-        for (let i = 0; i < this.numCardsInSlider; i++) {
+        for (let i = this.numCardsInSlider - 1; i >= 0; i--) {
             const petData = this.getCardDataById(this.cardsMap.prev[i]);
             let petCard = (new PetCard(petData,'pet-card--absolute')).generatePetCard();
             petCard.style.left = (this.calculateLeftPosition(i - this.numCardsInSlider)) + 'px';
